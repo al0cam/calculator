@@ -1,0 +1,105 @@
+body
+{
+    background-color: #bdab9a;
+}
+.gridDiv
+{
+    
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+    justify-items: center;
+    align-items: center;
+    
+}
+.logo
+{
+    grid-row: 1/5;
+    grid-column: 1/17;
+}
+.inputDiv
+{
+    grid-row: 5/6;
+    grid-column: 1/17;
+}
+.inputDiv input
+{
+    font-size: 40px;
+    text-align: right;
+    width: 200px;
+    padding-top: 10px;
+}
+
+.button1,.button2,.button3,.button4,.button5,.button6,.button7,.button8,.button9,.button0,.buttonDecimal,.buttonEquals,.buttonMinus,.buttonPlus,.buttonDivide,.buttonMultiply
+{
+    justify-content: center;
+    align-items: center;
+}
+button
+{
+    border: none;
+    background-color: #294444;
+    padding: 30px;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+}
+/*button rows*/
+.button1,.button2,.button3,.buttonMultiply
+{
+    grid-row: 12/15;
+}
+.button4,.button5,.button6,.buttonMinus
+{
+    grid-row: 10/13;
+}
+.button7,.button8,.button9,.buttonPlus
+{
+    grid-row: 8/11;
+}
+.button0,.buttonDecimal,.buttonDivide
+{
+    grid-row: 14/17;
+}
+
+/*button columns*/
+.button1,.button4,.button7
+{
+    grid-column: 7;
+}
+.button2,.button5,.button8
+{
+    grid-column: 8;
+}
+.button3,.button6,.button9,.buttonDecimal
+{
+    grid-column: 9;
+}
+.buttonDivide,.buttonPlus,.buttonMinus,.buttonMultiply
+{
+    grid-column: 10;
+}
+
+.button0
+{
+    grid-column: 7/9;
+}
+.button0 button
+{
+    width: 120px;
+}
+.buttonEquals
+{
+    grid-row: 8/17;
+    grid-column: 11/14;
+}
+.buttonEquals button
+{
+    width: 300px;
+    height: 300px;
+}
+.buttonClear
+{
+    grid-row: 6/8;
+    grid-column: 8/10;
+}
